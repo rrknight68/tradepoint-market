@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Cape Coral Industrial Flex — Vantage Point Investments</title>
+<meta name="description" content="The market case for Trade Point. 98,264 SF flex industrial condo development in Cape Coral, FL.">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:    #0D2B4E;
+  --navy-dk: #071D35;
+  --gold:    #C89A3A;
+  --gold-lt: #E8C97A;
+  --cream:   #F9F7F3;
+  --cream-dk:#F0EDE6;
+  --slate:   #6B7B8D;
+  --slate-lt:#8C9BAA;
+  --green:   #1D9E75;
+  --green-dk:#147A5A;
+  --border:  #E2DDD5;
+  --white:   #FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;color:var(--navy);background:var(--cream);line-height:1.6;}
+
+/* Layout */
+.page{max-width:820px;margin:0 auto;padding:0 24px;}
+.section{padding:48px 0;border-bottom:1px solid var(--border);}
+.section:last-of-type{border-bottom:none;}
+
+/* Logo */
+.logo{display:flex;flex-direction:column;align-items:center;gap:2px;padding:48px 0 12px;}
+.logo-name{font-family:'Cinzel',serif;font-size:20px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);}
+.logo-row{display:flex;align-items:center;gap:6px;}
+.logo-rule{width:28px;height:1px;background:var(--gold);}
+.logo-inv{font-family:'Cinzel',serif;font-size:9px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);}
+
+/* Typography */
+.page-title{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:600;color:var(--navy);text-align:center;margin-bottom:6px;}
+.page-sub{font-size:14px;color:var(--slate);text-align:center;margin-bottom:48px;}
+.section-tag{font-family:'DM Mono',monospace;font-size:10px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.section-heading{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--navy);margin-bottom:8px;}
+.section-sub{font-size:14px;color:var(--slate);margin-bottom:32px;max-width:600px;line-height:1.7;}
+
+/* Stat row */
+.stat-row{display:flex;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:32px;}
+.stat-cell{flex:1;background:var(--white);padding:20px 16px;text-align:center;}
+.stat-val{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:var(--navy);}
+.stat-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate-lt);margin-top:4px;}
+
+/* Bullet grid */
+.bullet-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:16px;}
+.bullet-cell{background:var(--white);padding:14px 18px;display:flex;gap:10px;align-items:flex-start;}
+.b-dot{width:6px;height:6px;border-radius:50%;background:var(--green);margin-top:5px;flex-shrink:0;}
+.b-title{font-size:12px;font-weight:500;color:var(--navy);margin-bottom:2px;}
+.b-text{font-size:11px;color:var(--slate);line-height:1.55;}
+
+/* Vacancy table */
+.vacancy-table{width:100%;border-collapse:collapse;margin-bottom:32px;border:1px solid var(--border);border-radius:4px;overflow:hidden;}
+.vacancy-table th{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate-lt);background:var(--cream-dk);padding:10px 16px;text-align:left;}
+.vacancy-table td{font-size:13px;padding:10px 16px;border-top:1px solid var(--border);color:var(--navy);}
+.vacancy-table td.mono{font-family:'DM Mono',monospace;}
+.vacancy-table tr.highlight td{background:rgba(29,158,117,0.06);font-weight:500;}
+.vacancy-table td .tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.06em;color:var(--green);margin-left:8px;}
+
+/* Three columns */
+.col-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:24px;}
+.col-cell{background:var(--white);padding:24px 20px;}
+.col-tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.col-body{font-size:12px;color:var(--slate);line-height:1.65;}
+
+/* Quote */
+.quote{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;font-style:italic;color:var(--navy);line-height:1.6;padding:24px 0;border-top:1px solid var(--border);margin-top:8px;}
+.quote::before{content:'\201C';font-size:36px;color:var(--gold);line-height:0;vertical-align:-12px;margin-right:4px;}
+
+/* Press */
+.press-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:16px;}
+.press-cell{background:var(--white);padding:20px 18px;}
+.press-source{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+.press-quote{font-size:12px;font-style:italic;color:var(--navy);line-height:1.55;}
+
+/* Source */
+.source{font-family:'DM Mono',monospace;font-size:9px;color:var(--slate-lt);letter-spacing:.04em;margin-top:12px;}
+
+/* CTA */
+.cta-band{background:var(--navy);border-radius:4px;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:48px;}
+.cta-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+.cta-heading{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--white);}
+.cta-btn{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--navy);background:var(--gold);padding:12px 24px;border-radius:3px;white-space:nowrap;transition:background .2s;}
+.cta-btn:hover{background:var(--gold-lt);}
+
+/* Footer */
+.footer{text-align:center;padding:32px 0;font-family:'DM Mono',monospace;font-size:9px;color:var(--slate-lt);letter-spacing:.1em;}
+
+/* Responsive */
+@media(max-width:700px){
+  .stat-row{flex-wrap:wrap;}
+  .stat-cell{min-width:45%;}
+  .bullet-grid,.col-grid,.press-grid{grid-template-columns:1fr;}
+  .cta-band{flex-direction:column;text-align:center;}
+  .page-title{font-size:28px;}
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Logo -->
+  <div class="logo">
+    <span class="logo-name">Vantage Point</span>
+    <div class="logo-row">
+      <div class="logo-rule"></div>
+      <span class="logo-inv">Investments</span>
+      <div class="logo-rule"></div>
+    </div>
+  </div>
+
+  <h1 class="page-title">Why Cape Coral Industrial Flex</h1>
+  <p class="page-sub">The market case for Trade Point &middot; Cape Coral, FL</p>
+
+  <!-- ═══ SECTION 1 — THE CITY ═══ -->
+  <div class="section">
+    <div class="section-tag">Section 1 &mdash; The City</div>
+    <h2 class="section-heading">A City Outgrowing Itself</h2>
+    <p class="section-sub">Cape Coral is the fastest-growing city in America &mdash; and its commercial infrastructure hasn't caught up.</p>
+
+    <div class="stat-row">
+      <div class="stat-cell"><div class="stat-val">243K</div><div class="stat-label">Population</div></div>
+      <div class="stat-cell"><div class="stat-val">4.1%</div><div class="stat-label">Annual Growth</div></div>
+      <div class="stat-cell"><div class="stat-val">+25%</div><div class="stat-label">Since 2020</div></div>
+      <div class="stat-cell"><div class="stat-val">58K</div><div class="stat-label">Out-Commuters</div></div>
+    </div>
+
+    <div class="bullet-grid">
+      <div class="bullet-cell"><div class="b-dot"></div><div><div class="b-title">58,000 skilled workers commuting out daily</div><div class="b-text">A massive workforce ready for businesses that don't yet exist locally. Trade Point is built for the day they stop leaving.</div></div></div>
+      <div class="bullet-cell"><div class="b-dot"></div><div><div class="b-title">$2B in infrastructure investment 2020&ndash;2030</div><div class="b-text">Pine Island Road Corridor and 7 Islands Project are transforming Cape Coral's commercial viability.</div></div></div>
+      <div class="bullet-cell"><div class="b-dot"></div><div><div class="b-title">Build-out population of 377,000 projected</div><div class="b-text">Cape Coral is still early in its growth story. City planners project 55% more population capacity before full build-out.</div></div></div>
+      <div class="bullet-cell"><div class="b-dot"></div><div><div class="b-title">No state income tax + pro-business regulations</div><div class="b-text">Attract entrepreneurs from the Midwest and Northeast who bring capital, demand, and a bias toward owner-occupied space.</div></div></div>
+    </div>
+
+    <div class="source">Sources: Cape Coral EDO, U.S. Census Bureau, FloridaFutureRealty (2025)</div>
+  </div>
+
+  <!-- ═══ SECTION 2 — MARKET SCARCITY ═══ -->
+  <div class="section">
+    <div class="section-tag">Section 2 &mdash; Market Scarcity</div>
+    <h2 class="section-heading">The Scarcity Nobody Talks About</h2>
+    <p class="section-sub">Cape Coral has the tightest industrial vacancy in the region &mdash; and virtually no new supply entering the market.</p>
+
+    <table class="vacancy-table">
+      <thead><tr><th>Market</th><th>Vacancy</th><th>Context</th></tr></thead>
+      <tbody>
+        <tr class="highlight"><td>Cape Coral <span class="tag">&starf;</span></td><td class="mono">3.7%</td><td>Tightest in region</td></tr>
+        <tr><td>Naples</td><td class="mono">3.5%</td><td>Comparable, more supply</td></tr>
+        <tr><td>Fort Myers</td><td class="mono">6.4%</td><td>73% more available</td></tr>
+        <tr><td>Punta Gorda</td><td class="mono">10.7%</td><td>3&times; more available</td></tr>
+        <tr><td>Bonita Springs</td><td class="mono">6.5%</td><td>75% more available</td></tr>
+      </tbody>
+    </table>
+
+    <div class="stat-row">
+      <div class="stat-cell"><div class="stat-val">+30.6%</div><div class="stat-label">Rent Growth (3yr)</div></div>
+      <div class="stat-cell"><div class="stat-val">740K SF</div><div class="stat-label">Total Flex Inventory</div></div>
+      <div class="stat-cell"><div class="stat-val">1</div><div class="stat-label">Active Listing</div></div>
+    </div>
+
+    <div class="bullet-grid">
+      <div class="bullet-cell"><div class="b-dot"></div><div><div class="b-title">30.6% rent growth with no new supply</div><div class="b-text">Industrial rents have risen 30.6% over 3 years with virtually no new deliveries entering the market.</div></div></div>
+      <div class="bullet-cell"><div class="b-dot"></div><div><div class="b-title">Sub-50K SF: the only segment not overbuilding</div><div class="b-text">Small-bay industrial under 50K SF is the only segment NOT overbuilding nationally. The shortage is structural, not cyclical.</div></div></div>
+      <div class="bullet-cell"><div class="b-dot"></div><div><div class="b-title">Only 1 active flex listing in the entire market</div><div class="b-text">3.7% industrial vacancy — tightest in the region. Fort Myers has 73% more available space. Punta Gorda has 3&times;.</div></div></div>
+      <div class="bullet-cell"><div class="b-dot"></div><div><div class="b-title">South Florida: acute structural shortage</div><div class="b-text">South Florida explicitly cited as market with acute structural shortage of small industrial space.</div></div></div>
+    </div>
+
+    <div class="source">Sources: CoStar Group via Cape Coral EDO Q2 FY'25; CommercialSearch.com; Cape Coral Breeze (2024)</div>
+  </div>
+
+  <!-- ═══ SECTION 3 — NATIONAL TAILWIND ═══ -->
+  <div class="section">
+    <div class="section-tag">Section 3 &mdash; National Tailwind</div>
+    <h2 class="section-heading">The AI Economy Needs Physical Space</h2>
+    <p class="section-sub">The most important economic shift of our generation is creating enormous, overlooked demand for exactly the space Trade Point provides.</p>
+
+    <div class="col-grid">
+      <div class="col-cell">
+        <div class="col-tag">The Skilled Trades Supercycle</div>
+        <div class="col-body">AI is the largest infrastructure buildout in American history. Google committed $10M to train electricians. IBEW recruiting 100,000+ for AI data center projects. These are the exact buyers for SBA 504 flex units.</div>
+      </div>
+      <div class="col-cell">
+        <div class="col-tag">A New Generation of Small Business Owners</div>
+        <div class="col-body">Vocational enrollment rose 16% in 2025. Gen Z is entering the trades. As workers establish themselves in Cape Coral, they start their own shops &mdash; and need their own space.</div>
+      </div>
+      <div class="col-cell">
+        <div class="col-tag">Small-Bay: The Only Segment Not Overbuilding</div>
+        <div class="col-body">Big-box vacancies rising. Small-bay under 50K SF at record-low vacancy nationally. The shortage is structural, not cyclical.</div>
+      </div>
+    </div>
+
+    <div class="quote">AI doesn't just live in the cloud &mdash; it lives in the hands of the electricians and contractors building it. Those workers need somewhere to operate. That somewhere is Trade Point.</div>
+
+    <div class="source">Sources: CRE Daily/Lee &amp; Associates Nov 2025; LendingTree/ClickOrlando Jul 2025; Gulfshore Business Aug 2025</div>
+  </div>
+
+  <!-- ═══ THIRD-PARTY VALIDATION ═══ -->
+  <div class="section">
+    <div class="section-tag">Third-Party Validation</div>
+
+    <div class="press-grid">
+      <div class="press-cell">
+        <div class="press-source">LendingTree / ClickOrlando &middot; Jul 2025</div>
+        <div class="press-quote">"Cape Coral ranked #5 fastest-growing metro in the United States."</div>
+      </div>
+      <div class="press-cell">
+        <div class="press-source">CRE Daily / Lee &amp; Associates &middot; Nov 2025</div>
+        <div class="press-quote">"Small-bay vacancy at 4.2% vs 7.4% for large-format industrial."</div>
+      </div>
+      <div class="press-cell">
+        <div class="press-source">Gulfshore Business &middot; Aug 2025</div>
+        <div class="press-quote">"IOS and flex supply is not keeping up with the demand powered by Southwest Florida's growing population."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div>
+      <div class="cta-eyebrow">Next step</div>
+      <div class="cta-heading">See the full investment opportunity</div>
+    </div>
+    <a href="https://tradepoint-investor.vercel.app" class="cta-btn">View Deal &rarr;</a>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">Vantage Point Investments &middot; Trade Point Industrial &middot; Cape Coral, FL</div>
+
+</div>
+
+</body>
+</html>
